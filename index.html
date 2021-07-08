@@ -28,8 +28,8 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
+  	document.write("username : " + user);
     alert("Welcome again " + user);
-    document.write("person" + user);
   } else {
      user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
